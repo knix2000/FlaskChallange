@@ -5,18 +5,12 @@ namespace Tests
 {
     public class CoordinateTests
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
-
         [Datapoint]
         public int zero = 0;
         public int positive = 1;
         public int negative = -1;
         public int maxvalue = int.MaxValue;
         public int minvalue = int.MinValue;
-
 
         [Theory]
         public void ShouldInitializeWithCorrectValues(int x, int y)
