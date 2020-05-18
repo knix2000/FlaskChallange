@@ -10,14 +10,6 @@ namespace FlaskChallange
             Y = y;
         }
 
-        public bool SamePositionAs(Coordinate other)
-        {
-            if (X == other.X && Y == other.Y)
-            {
-                return true;
-            }
-            return false;
-        }
         public int X { get; set; }
         public int Y { get; set; }
 

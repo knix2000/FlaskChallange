@@ -48,7 +48,7 @@ namespace FlaskChallange
 
             var pour = Vertices.Where(v => (vertex.X + vertex.Y) - v.X == v.Y).ToList(); // pour from one flask to the other
 
-            var neighbors = flaskY.Concat(flaskX).Concat(pour).Where(v => !v.SamePositionAs(vertex)).Distinct();
+            var neighbors = flaskY.Concat(flaskX).Concat(pour).Where(v => v!=vertex).Distinct();
 
             return neighbors;
         }
